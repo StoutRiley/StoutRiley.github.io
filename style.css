@@ -1,5 +1,5 @@
 :root {
-  --bg: #d6d6d6;
+  --bg: #f1f1ef;
   --ink: #000000;
   --muted: #333333;
   --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -38,10 +38,10 @@ footer {
 
 h1 {
   font-family: var(--serif);
-  font-weight: 900;
-  font-size: clamp(3.5rem, 15vw, 10rem);
-  line-height: 0.95;
-  letter-spacing: -0.02em;
+  font-weight: 500;
+  font-size: clamp(2.5rem, 9vw, 5.5rem);
+  line-height: 1;
+  letter-spacing: -0.01em;
 }
 
 .tagline {
@@ -62,8 +62,8 @@ section {
 
 h2 {
   font-family: var(--serif);
-  font-weight: 900;
-  font-size: 1.25rem;
+  font-weight: 600;
+  font-size: 1.2rem;
   line-height: 1.4;
 }
 
