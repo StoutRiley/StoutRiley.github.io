@@ -9,17 +9,41 @@
   <meta property="og:description" content="Corporate estimator, actor, and vocalist.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.rileystout.com">
+  <meta property="og:image" content="https://www.rileystout.com/images/headshot.jpg">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f1f1ef'/%3E%3Ctext x='50' y='68' font-size='56' font-family='Georgia' font-weight='600' text-anchor='middle' fill='%23000'%3ERS%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add("js")</script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <h1>Riley Stout</h1>
-    <p class="tagline">Cost estimator, vocalist, and actor.</p>
+  <header class="masthead">
+    <a class="brand" href="#top" aria-label="Riley Stout, back to top">
+      <img src="images/logo.png" alt="RRS logo" width="900" height="429">
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Menu">
+      <span class="bars" aria-hidden="true"></span>
+    </button>
+    <nav class="site-menu" id="site-menu" aria-label="Main">
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#writing">Mission</a></li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
   </header>
+
+  <div class="hero" id="top">
+    <div class="hero-text">
+      <h1>Riley Stout</h1>
+      <p class="tagline">Cost estimator, vocalist, and actor.</p>
+    </div>
+    <figure class="portrait">
+      <img src="images/headshot.jpg" alt="Portrait of Riley Stout smiling, wearing a black v-neck shirt" width="960" height="1200">
+    </figure>
+  </div>
 
   <main>
     <section id="about">
@@ -35,7 +59,7 @@
       <div class="content">
         <!-- EDIT: replace with your newsletter or essay links -->
         <p>I hope to publish a book on our duty to our humanity and the responsibility that comes inherent with life. This would be a publication of morality as a logical framework.</p>
-        <p><a href="#contact">interested in learning more</a></p>
+        <p><a href="contact.html">interested in learning more</a></p>
       </div>
     </section>
 
@@ -64,5 +88,6 @@
   <footer>
     <p>&copy; 2026 Riley Stout</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
