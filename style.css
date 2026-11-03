@@ -55,10 +55,36 @@ footer {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(14rem, 20rem);
+  grid-template-columns: minmax(0, 1fr) minmax(14rem, 22rem);
   gap: 2.5rem clamp(2rem, 6vw, 4.5rem);
-  align-items: end;
-  padding: clamp(2.5rem, 8vh, 5rem) 0 clamp(3rem, 8vh, 5rem);
+  align-items: stretch;
+  padding: clamp(1.5rem, 5vh, 2.75rem) 0 clamp(2.5rem, 6vh, 4rem);
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.quote {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--ink);
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.3rem, 2.4vw, 1.65rem);
+  line-height: 1.35;
+}
+
+.quote p {
+  max-width: 24rem;
 }
 
 .portrait img {
@@ -67,7 +93,7 @@ footer {
   height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: center 15%;
+  object-position: center;
   background: #555;
 }
 
@@ -147,8 +173,13 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .quote {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
   .portrait {
-    max-width: 18rem;
+    max-width: 20rem;
   }
 }
 
