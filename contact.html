@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Riley Stout</title>
+  <meta name="description" content="Send Riley Stout a message.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f1f1ef'/%3E%3Ctext x='50' y='68' font-size='56' font-family='Georgia' font-weight='600' text-anchor='middle' fill='%23000'%3ERS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="index.html" aria-label="Riley Stout, home">
+      <img src="images/logo.png" alt="RRS logo" width="900" height="429">
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Menu">
+      <span class="bars" aria-hidden="true"></span>
+    </button>
+    <nav class="site-menu" id="site-menu" aria-label="Main">
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#writing">Mission</a></li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-head">
+    <h1>Contact</h1>
+    <p class="tagline">Send a message and it goes straight to my inbox.</p>
+  </div>
+
+  <main>
+    <section id="message">
+      <h2>Message</h2>
+      <div class="content">
+        <!-- SETUP: replace YOUR_ACCESS_KEY_HERE below with the key Web3Forms emails you (web3forms.com) -->
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="0d9e11df-2110-42c2-9e51-25268bb2ee44">
+          <input type="hidden" name="subject" value="New message from rileystout.com">
+          <input type="hidden" name="from_name" value="rileystout.com contact form">
+          <input type="checkbox" name="botcheck" class="trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+
+          <div class="field">
+            <label for="message-text">Message</label>
+            <textarea id="message-text" name="message" rows="7" required></textarea>
+          </div>
+
+          <button class="submit" type="submit">Send message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="direct">
+      <h2>Direct</h2>
+      <div class="content">
+        <p><a href="mailto:riley@rileystout.com">riley@rileystout.com</a></p>
+        <p class="links">
+          <a href="https://www.linkedin.com/in/riley-stout">LinkedIn</a>
+          <a href="https://x.com/RileyStout52">X</a>
+          <a href="https://www.instagram.com/riley.r.stout/">Instagram</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Riley Stout</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
