@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Media | Riley Stout</title>
+  <meta name="description" content="Photos, video, and audio from Riley Stout.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f1f1ef'/%3E%3Ctext x='50' y='68' font-size='56' font-family='Georgia' font-weight='600' text-anchor='middle' fill='%23000'%3ERS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="index.html" aria-label="Riley Stout, home">
+      <img src="images/logo.png" alt="RRS logo" width="900" height="429">
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Menu">
+      <span class="bars" aria-hidden="true"></span>
+    </button>
+    <nav class="site-menu" id="site-menu" aria-label="Main">
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#writing">Mission</a></li>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-head">
+    <h1>Media</h1>
+    <p class="tagline">Photos, video, and audio.</p>
+  </div>
+
+  <main>
+    <section id="photos">
+      <h2>Photos</h2>
+      <div class="content wide">
+        <!-- To add a photo: copy one <li> block, put the image in images/gallery/, and set width/height to its real pixel size. -->
+        <ul class="gallery">
+          <li>
+            <button class="thumb" type="button" data-caption="On stage as SpongeBob. Photo: Jennifer Murray Photography">
+              <img src="images/gallery/spongebob-ladder.jpg" alt="On stage in a yellow shirt, red tie, and plaid shorts, standing on a ladder beneath a Bikini Bottom Post Office sign" width="1024" height="684" loading="lazy">
+            </button>
+          </li>
+          <li>
+            <button class="thumb" type="button" data-caption="Portrait">
+              <img src="images/gallery/portrait-suit.jpg" alt="Riley Stout laughing, wearing a gray suit and blue shirt beside a bright window" width="1717" height="2576" loading="lazy">
+            </button>
+          </li>
+          <li>
+            <button class="thumb" type="button" data-caption="On stage in a Western production">
+              <img src="images/gallery/western-embrace.jpg" alt="Riley Stout in a black cowboy hat and shirt embracing a woman in a teal sequined top on a Western stage set" width="1080" height="720" loading="lazy">
+            </button>
+          </li>
+          <li>
+            <button class="thumb" type="button" data-caption="Backstage with castmates">
+              <img src="images/gallery/spongebob-cast.jpg" alt="Riley Stout in a yellow shirt and red tie giving a thumbs up, with two castmates in colorful costumes in front of foam-noodle sea coral" width="1536" height="1546" loading="lazy">
+            </button>
+          </li>
+          <li>
+            <button class="thumb" type="button" data-caption="Portrait">
+              <img src="images/gallery/portrait-plaid.jpg" alt="Riley Stout leaning against a wall with arms crossed, wearing a plaid shirt and olive pants" width="1717" height="2576" loading="lazy">
+            </button>
+          </li>
+          <li>
+            <button class="thumb" type="button" data-caption="On stage in a Western production">
+              <img src="images/gallery/western-hat.jpg" alt="Riley Stout smiling on stage in a cream cowboy hat and shirt with a maroon neckerchief" width="640" height="960" loading="lazy">
+            </button>
+          </li>
+          <li>
+            <button class="thumb" type="button" data-caption="On stage as the Lion. Photo: Sabrina Lea Photography">
+              <img src="images/gallery/lion.jpg" alt="Riley Stout on stage in a full lion costume with an orange mane, one foot raised on a platform" width="251" height="350" loading="lazy">
+            </button>
+          </li>
+          <li>
+            <button class="thumb" type="button" data-caption="On a road construction site">
+              <img src="images/gallery/job-site.jpg" alt="Riley Stout taking a selfie in a white hard hat and bright green shirt on a road construction site" width="1932" height="2576" loading="lazy">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="video">
+      <h2>Video</h2>
+      <div class="content wide">
+        <div class="video">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/vsgqPC6GZcU"
+            title="Riley Stout on YouTube"
+            loading="lazy"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </div>
+        <!-- Optional: add a caption under the video, for example <p class="caption">Your description here.</p> -->
+      </div>
+    </section>
+
+    <section id="audio">
+      <h2>Audio</h2>
+      <div class="content wide">
+        <!-- To add a track: copy one <li class="track"> block and point src at the new mp3 in audio/. -->
+        <ul class="tracks">
+          <li class="track">
+            <p class="track-title">Twilight Zone</p>
+            <audio controls preload="none" src="audio/twilight-zone.mp3">
+              Your browser does not support audio playback. <a href="audio/twilight-zone.mp3">Download the file</a>.
+            </audio>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <figure>
+      <img id="lightbox-img" src="" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lb-btn lb-close" type="button" aria-label="Close">Close</button>
+    <button class="lb-btn lb-prev" type="button" aria-label="Previous photo">Prev</button>
+    <button class="lb-btn lb-next" type="button" aria-label="Next photo">Next</button>
+  </dialog>
+
+  <footer>
+    <p>&copy; 2026 Riley Stout</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="media.js"></script>
+</body>
+</html>
